@@ -16,13 +16,37 @@
 
 
     <script>
-        // Área do trapézio
         //EPS
-
+        var base;
         var base_maior;
         var base_maior;
         var altura;
+        var diagonal_maior;
+        var diagonal_menor;
+        var pi = 3.14;
+        var raio;
         var area;
+        //Retângulo
+        base = parseInt(prompt("Informe a base do retângulo"));
+        altura = parseInt(prompt("Informe a altura:"));
+
+        area = base * altura;
+        alert("A área do retângulo é: " + area);
+
+        //Quadrado
+        base = parseInt(prompt("Informe o lado do quadrado"));
+
+        area = base * base;
+        alert("A área do quadrado é: " + area);
+
+
+        //Losango
+        diagonal_maior = parseInt(prompt("Digite o tamanho da diagonal maior do losango")); 
+        diagonal_menor = parseInt(prompt("Digite o tamanho da diagonal menor"));
+        area = (diagonal_maior * diagonal_menor) / 2;
+        alert("A área do losango é: " + area);
+
+        // Área do trapézio
 
         base_maior = parseInt(prompt("Informe a base maior:"));
         base_menor = parseInt(prompt("Informe a base menor:"));
@@ -30,8 +54,29 @@
 
         area = ((base_maior + base_menor) * altura) / 2;
 
-        alert(area);
+        alert("A área do trapézio é: " + area);
 
+        // Paralelogramo
+
+        base = parseInt(prompt("Informe a base do Paralelogramo"));
+        altura = parseInt(prompt("Informe a altura do Paralelogramo"));
+
+        area = base * altura;
+        alert("A área do paralelogramo é: " + area);
+
+        // Triângulo
+        base = parseInt(prompt("Informe a base do Triângulo"));
+        altura = parseInt(prompt("Informe a altura do Triângulo"));
+        area = (base * altura) / 2;
+
+        alert("A área do triângulo é: " + area);
+
+        // Círculo
+        diagonal_maior = parseInt(prompt("Informe a diagonal do círculo"));
+        raio = diagonal_maior / 2;
+        area = pi * (raio ** 2);
+
+        alert("A área do círculo é: " + area);
 
     </script>
 </body>
